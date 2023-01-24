@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+    <link rel="icon" type="image/png" sizes="32x32"
+      href="./images/favicon-32x32.png">
+    <link href="style.css" rel="stylesheet">
+
+
+    <title>Frontend Mentor | [Challenge Name Here]</title>
+
+
+  </head>
+  <body>
+
+    <header>
+      <h1>Our Pricing</h1>
+      <div class="toggle_month_year">
+        <p>Annually</p>
+        <label class="switch">
+          <input id="btnToggle" onclick="verifier()" type="checkbox" />
+          <span></span>
+        </label>
+        <p>Monthly</p>
+      </div>
+    </header>
+
+    <div class="all_subscription">
+      <div id="card1" class="subscription">
+        <h2>Basic</h2>
+        <h1 id="card1Price">&dollar;19.99</h1>
+        <div class="offer_details storage">
+          <p>500 GB Storage</p>
+        </div>
+        <div class="offer_details">
+          <p>2 Users Allowed</p>
+        </div>
+        <div class="offer_details">
+          <p>Send up to 3 GB</p>
+        </div>
+        <div class="learn_more">
+          <button>Learn More</button>
+        </div>
+      </div>
+
+      <div id="card2" class="subscription">
+        <h2>Professional</h2>
+        <h1 id="card2Price">&dollar;24.99</h1>
+        <div class="offer_details storage">
+          <p>1 TB Storage</p>
+        </div>
+        <div class="offer_details">
+          <p>5 Users Allowed</p>
+        </div>
+        <div class="offer_details">
+          <p>Send up to 10 GB</p>
+        </div>
+        <div class="learn_more">
+          <button>Learn More</button>
+        </div>
+      </div>
+
+      <div id="card3" class="subscription">
+        <h2>Master</h2>
+        <h1 id="card3Price">&dollar;39.99</h1>
+        <div class="offer_details storage">
+          <p>2 TB Storage</p>
+        </div>
+        <div class="offer_details">
+          <p>10 Users Allowed</p>
+        </div>
+        <div class="offer_details">
+          <p>Send up to 20 GB</p>
+        </div>
+        <div class="learn_more">
+          <button>Learn More</button>
+        </div>
+
+
+
+
+
+
+
+      </div>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>

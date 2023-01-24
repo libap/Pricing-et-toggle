@@ -1,0 +1,185 @@
+body {
+  margin: 0px;
+  padding: 100px;
+  background-color: whitesmoke;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+header p {
+  margin: 30px;
+  font-size: 1.5rem;
+}
+
+header .toggle_month_year {
+  display: flex;
+  align-items: center;
+}
+
+/*Bouton toggle*/
+.switch {
+  display: inline-block;
+  position: relative;
+  width: 70px;
+  height: 40px;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.switch input {
+  position: absolute;
+  top: -30px;
+  left: -30px;
+  width: 0;
+  height: 0;
+}
+
+.switch input + span {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: hsl(236, 47%, 79%);
+
+  border-radius: 20px;
+}
+
+.switch input:checked + span {
+  background: hsl(237, 63%, 64%);
+}
+
+.switch input + span:before {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  top: 50%;
+  left: 4px;
+  width: 32px;
+  height: 32px;
+  background: white;
+  border-radius: 50%;
+  transform: translateY(-50%);
+  transition: all 0.5s;
+}
+
+.switch input:checked + span:before {
+  left: 34px;
+}
+
+.all_subscription {
+  display: flex;
+  justify-content: center;
+  margin-top: 60px;
+}
+
+.all_subscription .subscription {
+  display: flex;
+  flex-direction: column;
+
+  justify-content: center;
+  align-items: center;
+  padding: 60px;
+  border-radius: 15px;
+}
+
+.all_subscription .subscription h2 {
+  font-size: 1.5rem;
+  margin: 10px;
+}
+
+.all_subscription .subscription h1 {
+  font-size: 5rem;
+  margin: 10px;
+}
+
+.all_subscription .subscription .offer_details {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-bottom: 1px solid hsl(236, 72%, 79%);
+}
+
+.all_subscription .subscription .storage {
+  border-top: 1px solid hsl(236, 72%, 79%);
+}
+
+.all_subscription .subscription .offer_details p {
+}
+
+.all_subscription .subscription .learn_more {
+  width: 95%;
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+  margin-bottom: 0px;
+}
+
+.all_subscription .subscription .learn_more button {
+  width: 95%;
+  padding: 10px;
+  font-size: 1.3rem;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  transition: 0.5s;
+}
+
+#card1,
+#card3 {
+  background-color: white;
+}
+
+#card1 button,
+#card3 button {
+  background-color: hsl(237, 63%, 64%);
+}
+
+#card1 button:hover,
+#card3 button:hover {
+  background-color: white;
+  border: 1px solid hsl(237, 63%, 64%);
+}
+
+#card2 {
+  background-color: hsl(237, 63%, 64%);
+  color: white;
+  margin-top: -30px;
+  margin-bottom: -30px;
+}
+
+#card2 button {
+  background-color: white;
+}
+
+#card2 button:hover {
+  background-color: hsl(237, 63%, 64%);
+  border: 1px solid white;
+}
+
+@media screen and (max-width: 600px) {
+  body {
+    margin: 0px;
+    padding: 0px;
+  }
+
+  .all_subscription {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 60px;
+  }
+  #card2 {
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+
+  .subscription {
+    margin: 30px;
+  }
+}
